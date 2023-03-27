@@ -24,7 +24,7 @@ const Store = () => {
   return (
     <div className="store">
       <IconSwitch icon={icon} onSwitch={onSwitch} />
-      {view}
+      <div className="view-container">{view}</div>
     </div>
   );
 };

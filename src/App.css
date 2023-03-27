@@ -1,8 +1,11 @@
 .store {
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .icon-container {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   margin: 1rem;
@@ -10,4 +13,48 @@
 
 .view-icon {
   font-size: 34px !important;
+}
+
+.view-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.MuiCard-root {
+  background-color: #f4f4f4 !important;
+  width: 345px;
+}
+
+.MuiCardHeader-subheader,
+.MuiCardHeader-title {
+  text-align: center;
+}
+
+.MuiCardContent-root {
+  overflow: hidden;
+}
+
+.MuiCardActions-root {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 2rem 2rem !important; 
+}
+
+.shop-card__img {
+  width: 300px;
+  height: 100%;
+  margin: -130px 0 -70px 0;
+}
+
+.add-btn {
+  color: #dc0000 !important;
+  border-color: #dc0000 !important;
+  font-weight: bold !important;
+  border-radius: 20px !important;
+}
+
+.shop-card__price {
+  color: #dc0000;
+  font-size: 20px;
 }
