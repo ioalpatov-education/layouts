@@ -14,9 +14,9 @@ const ShopCard = ({ card }) => {
 
   return (
     <Grid className="card-container" item sm={12} md={6} lg={4}>
-      <Card sx={{ maxWidth: 345 }}>
+      <Card className="shop__card" sx={{ maxWidth: 345 }}>
         <CardHeader title={name} subheader={color} />
-        <CardContent>
+        <CardContent className="card__content">
           <img
             className="shop-card__img"
             src={require(`../../img/${img}`)}
@@ -24,8 +24,8 @@ const ShopCard = ({ card }) => {
           />
         </CardContent>
 
-        <CardActions>
-          <span className="shop-card__price">${price}</span>
+        <CardActions className="card__actions">
+          <span className="shop__price">${price}</span>
           <Button className="add-btn" variant="outlined">
             {btnContent}
           </Button>

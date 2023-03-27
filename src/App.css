@@ -26,7 +26,7 @@
   border-radius: 20px !important;
 }
 
-.shop-card__price {
+.shop__price {
   color: #dc0000;
   font-size: 20px;
 }
@@ -39,7 +39,7 @@
   justify-content: center;
 }
 
-.MuiCard-root {
+.shop__card {
   background-color: #f4f4f4 !important;
   width: 345px;
 }
@@ -49,11 +49,11 @@
   text-align: center;
 }
 
-.MuiCardContent-root {
+.card__content {
   overflow: hidden;
 }
 
-.MuiCardActions-root {
+.card__actions {
   display: flex;
   justify-content: space-between;
   padding: 8px 2rem 2rem !important;
@@ -65,7 +65,7 @@
   margin: -130px 0 -70px 0;
 }
 
-.MuiList-root {
+.shop__list {
   display: flex;
   flex-direction: column;
   width: 100%;

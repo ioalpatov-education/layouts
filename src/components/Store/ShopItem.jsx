@@ -16,7 +16,7 @@ const ShopCard = ({ card }) => {
 
       <p>{color}</p>
 
-      <span className="shop-card__price">${price}</span>
+      <span className="shop__price">${price}</span>
       <Button className="add-btn" variant="outlined">
         {btnContent}
       </Button>
