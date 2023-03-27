@@ -1,7 +1,8 @@
 import { Button, ListItem } from "@mui/material";
+import PropTypes from "prop-types";
 
-const ShopCard = ({ card }) => {
-  const { name, price, color, img } = card;
+const ShopItem = ({ item }) => {
+  const { name, price, color, img } = item;
 
   const btnContent = "add to cart".toUpperCase();
 
@@ -24,4 +25,13 @@ const ShopCard = ({ card }) => {
   );
 };
 
-export default ShopCard;
+ShopItem.propTypes = {
+  item: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    price: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
+  }).isRequired,
+};
+
+export default ShopItem;

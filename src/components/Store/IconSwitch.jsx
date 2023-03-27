@@ -1,5 +1,6 @@
 import "material-icons/iconfont/material-icons.css";
 import IconButton from "@mui/material/IconButton";
+import PropTypes from "prop-types";
 
 const IconSwitch = ({ icon, onSwitch }) => {
   const handleClick = () => {
@@ -13,4 +14,10 @@ const IconSwitch = ({ icon, onSwitch }) => {
     </div>
   );
 };
+
+IconSwitch.propTypes = {
+  icon: PropTypes.string.isRequired,
+  onSwitch: PropTypes.func.isRequired,
+};
+
 export default IconSwitch;

@@ -6,6 +6,7 @@ import {
   Button,
   Grid,
 } from "@mui/material";
+import PropTypes from "prop-types";
 
 const ShopCard = ({ card }) => {
   const { name, price, color, img } = card;
@@ -33,6 +34,15 @@ const ShopCard = ({ card }) => {
       </Card>
     </Grid>
   );
+};
+
+ShopCard.propTypes = {
+  card: PropTypes.shape({
+    name: PropTypes.string.isRequired,
+    price: PropTypes.string.isRequired,
+    color: PropTypes.string.isRequired,
+    img: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default ShopCard;
