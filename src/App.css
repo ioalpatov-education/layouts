@@ -4,21 +4,39 @@
   align-items: center;
 }
 
+.view-container {
+  width: 100%;
+}
+
 .icon-container {
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  margin: 1rem;
+  padding: 1rem;
 }
 
 .view-icon {
   font-size: 34px !important;
 }
 
-.view-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+.add-btn {
+  color: #dc0000 !important;
+  border-color: #dc0000 !important;
+  font-weight: bold !important;
+  border-radius: 20px !important;
+}
+
+.shop-card__price {
+  color: #dc0000;
+  font-size: 20px;
+}
+.cards-container {
+  justify-content: center;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
 }
 
 .MuiCard-root {
@@ -38,7 +56,7 @@
 .MuiCardActions-root {
   display: flex;
   justify-content: space-between;
-  padding: 8px 2rem 2rem !important; 
+  padding: 8px 2rem 2rem !important;
 }
 
 .shop-card__img {
@@ -47,14 +65,22 @@
   margin: -130px 0 -70px 0;
 }
 
-.add-btn {
-  color: #dc0000 !important;
-  border-color: #dc0000 !important;
-  font-weight: bold !important;
-  border-radius: 20px !important;
+.MuiList-root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 2px;
 }
 
-.shop-card__price {
-  color: #dc0000;
-  font-size: 20px;
+.item-container {
+  justify-content: space-between !important;
+  background-color: #f4f4f4 !important;
+  width: 100%;
+  overflow: hidden;
+}
+
+.shop-list__img {
+  width: 150px;
+  height: 100%;
+  margin: -100px 0 -70px 0;
 }
