@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 const ListView = ({ items }) => {
   const productsList = items.map((item, itemIdx) => {
-    return <ShopItem key={itemIdx} card={item} />;
+    return <ShopItem key={itemIdx} item={item} />;
   });
   return <List className="shop__list">{productsList}</List>;
 };
